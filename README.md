@@ -22,3 +22,5 @@ https://github.com/mmjaymm/bizmates-backend
 And write it in readme.md and include it in your repository.
 
 \*\*My UI and UX implementation stands out because I have implemented user-centric design principles. Since my app is focused on providing information, I created a simple and intuitive UX and UI. The needs and preferences of users are prioritized, allowing them to easily search for information. The app presents content in a way that is easy to understand, helping users navigate the website effortlessly.
+
+![alt text](https://github.com/mmjaymm/bizmates-frontend/blob/master/travellers.PNG)
