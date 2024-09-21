@@ -30,7 +30,7 @@ places.getPlaces()
                 class="bg-white rounded-lg shadow overflow-hidden"
               >
                 <img
-                  :src="place.photos[0].image"
+                  :src="place.photos[0]?.image"
                   :alt="place.name"
                   class="w-full h-48 object-cover"
                 />
