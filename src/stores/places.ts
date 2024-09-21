@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import axios from 'axios'
 import Swal from 'sweetalert2'
+const apiUrlBizmates = import.meta.env.VITE_BIZMATES_BACKEND_URL
 
 export const usePlacesStore = defineStore('places', {
   state: () => ({
@@ -21,7 +22,7 @@ export const usePlacesStore = defineStore('places', {
       }
 
       await axios
-        .get('http://bizmates-exam.test:8080/api/get-places', {
+        .get(`${apiUrlBizmates}/get-places`, {
           params: {
             search: this.searchPlace
           }
@@ -44,7 +45,7 @@ export const usePlacesStore = defineStore('places', {
       this.loading = true
 
       await axios
-        .get(`http://bizmates-exam.test:8080/api/get-places/${id}`)
+        .get(`${apiUrlBizmates}/get-places/${id}`)
         .then((response) => {
           this.place = response.data
           this.loading = false
